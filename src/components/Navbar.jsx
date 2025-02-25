@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import { FaPhoneAlt } from "react-icons/fa";
 
 export default async function Navbar() {
   const links = (
@@ -7,17 +8,23 @@ export default async function Navbar() {
       <Link href="/">
         <li>Home</li>
       </Link>
-      <Link href="/profile">
-        <li>Profile </li>
+      <Link href="/about-us">
+        <li>About Us</li>
+      </Link>
+      <Link href="/mortgage-calculator">
+        <li>Mortgage Calculator</li>
+      </Link>
+      <Link href="/start">
+        <li>Start</li>
       </Link>
     </>
   );
   return (
-    <nav className="bg-secondary/30 fixed top-0 z-50 w-full">
+    <nav className="bg-primary text-white fixed top-0 z-50 w-full py-4">
       <div className="navbar w-11/12 mx-auto">
-        <div className="flex-1">
+        <div className="navbar-start">
           <div className="dropdown">
-            <div tabIndex={0} role="button" className="lg:hidden">
+            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -35,27 +42,25 @@ export default async function Navbar() {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content border-2 rounded-box z-[1] mt-3 w-52 p-2"
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow "
             >
               {links}
             </ul>
           </div>
-          <Link href={"/"} className="flex justify-center items-center gap-2">
-            <h2 className="text-3xl flex items-center justify-center font-bold ">
-              {" "}
-              BlogViewer
-            </h2>
+          <Link href={"/"} className="font-bold text-3xl">
+            Better
           </Link>
-        </div>
-        <div className="flex-none">
-          <div>
-            <ul className="menu menu-horizontal gap-3 font-semibold px-1  hidden lg:flex mr-2">
-              {links}
-            </ul>
+          <div className=" hidden lg:flex">
+            <ul className="menu menu-horizontal gap-6 px-1 ml-6">{links}</ul>
           </div>
-          <button className="btn bg-gradient-to-r from-primary to-secondary text-white">
-            Log Out
-          </button>
+        </div>
+        <div className="navbar-end space-x-4">
+          <div className="w-10 h-10 rounded-full border border-white flex justify-center items-center">
+            <FaPhoneAlt />
+          </div>
+
+          <a className="">Sign In</a>
+          <a className="py-2 px-4 rounded-full bg-secondary">Continue</a>
         </div>
       </div>
     </nav>
