@@ -6,17 +6,11 @@ import Amanda from "@/assets/still-quote-Amanda.jpg";
 import Paul from "@/assets/still-quote-Paul.jpg";
 import { FaStar } from "react-icons/fa";
 
-// const testimonials = [
-//   "/assets/still-quote-Arian.jpg",
-//   "/assets/still-quote-Amanda.jpg",
-//   "/assets/still-quote-Paul.jpg",
-// ];
-
 export default function WhyBetter() {
   const [currentImg, setCurrentImg] = useState(Arian);
 
   return (
-    <div className="flex flex-col md:flex-row items-center space-x-16 justify-between bg-white mt-16">
+    <div className="flex flex-col md:flex-row items-center justify-between bg-white mt-16">
       {/* Image Section */}
       <div className="w-full flex flex-col md:w-1/2 justify-center items-center">
         <div>

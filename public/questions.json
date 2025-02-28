@@ -1,0 +1,41 @@
+[
+  {
+    "id": "products",
+    "Section1title": "Buying your first home with Better",
+    "Section1image": "https://i.ibb.co.com/rG7qg0YR/first-home.webp",
+    "Section2title": "One Day Mortgage1",
+    "Section2description": "Kick your home loan into hyperdrive. Going from locked rate to Commitment Letter takes weeks for traditional lenders. We do it in a single day. Traditional lenders deliver a Commitment Letter in a few weeks.",
+    "Section2image": "https://i.ibb.co.com/TBWZ0Fn8/one-day-mortgage.webp",
+    "Section3title": "Better HELOC",
+    "Section3description": "Introducing One Day HELOC—your express lane to getting cash from your home with our Home Equity Line of Credit. Access up to 90% of your home equity as cash in as little as 7 days.",
+    "Section3image": "https://i.ibb.co.com/W4N9nxxz/better-heloc.webp",
+    "Section4title": "Insurance",
+    "Section4image": "https://i.ibb.co.com/kgDKdW2Z/insurance.webp"
+  },
+  {
+    "id": "calculators",
+    "Section1title": "Mortgage calculator",
+    "Section1image": "https://i.ibb.co.com/jvySZZ6T/mortgage-calculator.webp",
+    "Section2title": "Affordability calculator",
+    "Section2description": "Got homeownership dreams? Let's put some numbers behind them. Our affordability calculator estimates the maximum home you can afford.",
+    "Section2image": "https://i.ibb.co.com/wrYhHG7V/affordability-calculator.webp",
+    "Section3title": "HELOC calculator",
+    "Section3description": "Need cash? Quickly see how much equity you can borrow from your home and what your monthly payments might be.",
+    "Section3image": "https://i.ibb.co.com/Dcj7H21/heloc-calculator.webp",
+    "Section4title": "Fixed-rate loan comparison calculator",
+    "Section4image": "https://i.ibb.co.com/1Y94M6pK/fixed-rate-calculator.webp"
+  },
+  {
+    "id": "guides",
+    "Section1title": "What is a good debt-to-income ratio for a home loan?",
+    "Section1image": "https://i.ibb.co.com/nT6h3nb/good-dti.webp",
+    "Section2title": "Buying a house without realtor",
+    "Section2description": "Thinking about buying a house without a real estate agent? Read this first.",
+    "Section2image": "https://i.ibb.co.com/VYp9cGQF/buy-house-without-realtor.webp",
+    "Section3title": "Timeline for homebuying process",
+    "Section3description": "Does the process of buying a home seem daunting? Don't stress, we broke it down into 8 easy steps.",
+    "Section3image": "https://i.ibb.co.com/Pz4RDq4k/loan-timeline.webp",
+    "Section4title": "Conventional loan requirements",
+    "Section4image": "https://i.ibb.co.com/hJ3DW9c3/conventional-loan.webp"
+  }
+]
