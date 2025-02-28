@@ -1,8 +1,36 @@
+"use client";
 import Link from "next/link";
-import React from "react";
+import { usePathname } from "next/navigation";
+import React, { useEffect, useState } from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 
-export default async function Navbar() {
+export default function Navbar() {
+  const pathname = usePathname();
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    // If on the home route, reset state to default (green)
+    if (pathname === "/") {
+      setIsScrolled(false);
+    } else {
+      setIsScrolled(true); // White navbar on other pages
+    }
+  }, [pathname]); // Run this whenever the route changes
+
+  useEffect(() => {
+    if (pathname !== "/") return; // Only add scroll listener on home page
+
+    const handleScroll = () => {
+      if (window.scrollY > window.innerHeight) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [pathname]);
   const links = (
     <>
       <Link href="/">
@@ -20,7 +48,12 @@ export default async function Navbar() {
     </>
   );
   return (
-    <nav className="bg-primary text-white fixed top-0 z-50 w-full py-4">
+    <nav
+      className={`fixed top-0 z-50 w-full py-4 transition-all duration-300 ${
+        isScrolled ? "bg-white shadow-lg text-black" : "bg-primary text-white"
+      }`}
+      // className="bg-primary text-white fixed top-0 z-50 w-full py-4"
+    >
       <div className="navbar w-11/12 mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
