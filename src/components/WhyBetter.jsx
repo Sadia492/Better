@@ -10,7 +10,7 @@ export default function WhyBetter() {
   const [currentImg, setCurrentImg] = useState(Arian);
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between bg-white mt-16">
+    <div className="flex flex-col md:flex-row  bg-[#FEFCFA] items-center justify-between pt-16">
       {/* Image Section */}
       <div className="w-full flex flex-col md:w-1/2 justify-center items-center">
         <div>
